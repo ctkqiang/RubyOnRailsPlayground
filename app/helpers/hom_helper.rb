@@ -1,0 +1,2 @@
+module HomHelper
+end
