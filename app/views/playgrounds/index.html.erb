@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Playgrounds Data List</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Twitter</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @playgrounds.each do |playground| %>
+      <tr>
+        <td><%= playground.name %></td>
+        <td><%= playground.phone %></td>
+        <td><%= playground.email %></td>
+        <td><%= playground.twitter %></td>
+        <td><%= link_to 'Display', playground, class:"btn btn-dark" %></td>
+        <td><%= link_to 'Adment', edit_playground_path(playground), class:"btn btn-dark" %></td>
+        <td><%= link_to 'Delete', playground, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Add New Data', new_playground_path, class:"btn btn-dark"%>
+

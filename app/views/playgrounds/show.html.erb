@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @playground.name %>
+  </h1>
+  <p class="lead">
+  
+  <strong>Phone:</strong>  
+  <%= @playground.phone %> |
+
+  <strong>Email:</strong>  
+  <%= @playground.email %>  | 
+
+  <strong>Twitter:</strong>  
+  <%= @playground.twitter %>  |
+
+  </p>
+
+  <%= link_to 'Edit', edit_playground_path(@playground), class:"btn btn-dark"%>
+  <%= link_to 'Back', playgrounds_path, class:"btn btn-dark" %>
+</div>
+
+
+
+
