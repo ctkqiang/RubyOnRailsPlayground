@@ -27,7 +27,13 @@
 
     <%= render 'home/header' %>
     <div class="container">
+    
       <br/>
+
+      <% if notice %>
+        <%= render 'layouts/alerts' %>
+      <% end %>
+
       <%= yield %>
       <%# <p>SOME FOOTER</p> %>
 

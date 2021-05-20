@@ -3,3 +3,4 @@ runserver 'rails s'
 routes 'rails routes'
 create controllers 'rails g home index' for ../../home/index/
 createdb 'rails g scaffold table_name column_name:datatype column2name:datatype'  then migrate db into live by 'rails db:migrate'
+getlibrarydeclared 'bundle install' 

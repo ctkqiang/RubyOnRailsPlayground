@@ -1,2 +1,2 @@
 @ECHO OFF
-ECHO STARTING SERVER..... && rails s
+ECHO Starting Server..... &&  rails routes && rails s 
